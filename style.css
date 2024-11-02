@@ -1,0 +1,145 @@
+html{
+    background-color: #ececec;
+    color: #FF7A00;
+}
+
+
+body{
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+}
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+.horizontal-scroll-wrapper{
+    position:absolute;
+    display:block;
+    left:-255px;
+    width:500px;
+    height: 900px;
+    margin:0;
+    /* border: solid 1px black; */
+    background: none;
+    overflow-y:auto;
+    overflow-x:hidden;
+    transform:rotate(-90deg) translateY(-80px);
+    transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+    display:block;
+    padding:5px;
+    background:#D9D9D9;
+    transform:rotate(90deg);
+    transform-origin: right top;
+    box-sizing:border-box;
+}
+
+/* .ptitle{
+    display: grid;
+    grid-template-columns: 34% 34% 34% 16%;
+    grid-template-rows: 45% 45% 45% 45%;
+    width: 1025px;
+    font-size: 1vw;
+    margin-left: 210px;
+    padding: 20px;
+    padding-bottom: 0; 
+    text-transform: uppercase;  
+
+}
+.ptitle >div{
+    gap:10px;
+} */
+
+
+.squares{
+    padding-top: 310px;
+    padding-right: 50px;
+}
+
+.squares > div{
+    width: 300px;
+    height: 350px;
+    margin-left: 240px;
+}
+.squares > img{
+    padding-top: 50px;
+}
+
+
+.rotate{
+    position: absolute;
+    width: 830px;
+    height: 300px;
+    left: -230px;
+    top: 70px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    font-size: 23px;
+    
+    
+}
+
+.menu{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1vw;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.pnumber{
+    display: grid;
+    grid-template-columns: 34% 34% 34% 16%;
+    grid-template-rows: 45% 45% 45% 45%;
+    width: 1025px;
+    font-size: 1vw;
+    margin-left: 210px;
+    padding: 20px;
+    padding-bottom: 0; 
+    text-transform: uppercase;  
+}
+/* .infor{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    font-size: 1vw;
+    margin-left: 210px;
+    padding: 20px;
+    padding-bottom: 0;   
+    gap: 260px;
+}
+.descr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1vw;
+    margin-left: 210px;
+    padding: 20px;
+    padding-top: 0;   
+} */
+
+#item {
+    animation-duration: 13s;
+    animation-name: spinType;
+    animation-iteration-count: infinite;
+    width: 230px;
+    margin-left: 1000px;
+    margin-top: 300px;
+    
+}
+@keyframes spinType {
+    0% {
+      transform: rotate(0turn);
+    }
+    /* 60% {
+      transform: rotate(0.7turn);
+    } */
+    100% {
+      transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,270 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 200px;
+    background-color: #ffdd00;
+
+}
+
+.F{
+    transform: scale(1.2,1.5);
+    letter-spacing: 80px;
+    font-style: italic;
+    font-size: 200px;
+    color: #ffdd00;
+    text-shadow: 15px -15px 0 #FA275A, 
+                 14px -14px 0 #FA275A,   
+                 13px -13px 0 #FA275A,
+                 12px -12px 0 #FA275A,
+                 11px -11px 0 #FA275A,
+                 10px -10px 0 #FA275A,   
+                 9px -9px 0 #FA275A,
+                 8px -8px 0 #FA275A,
+                 7px -7px 0 #FA275A,
+                 6px -6px 0 #FA275A,   
+                 5px -5px 0 #FA275A,
+                 4px -4px 0 #FA275A,
+                 3px -3px 0 #FA275A,
+                 2px -2px 0 #FA275A,   
+                 1px -1px 0 #FA275A;
+
+}
+.F:before{
+    content:"F";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    overflow:hidden;
+    transition:all 0.5s;
+    color: white;
+    animation: fshine 1s forwards, fblink 5s 0.5s infinite;
+}
+.F:hover:before{
+    width:100%;
+  }
+  @keyframes fshine {
+    0% {
+      color:  #ffdd00;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.3rem #ffe6ff, 0 0 0.75rem #FA275A,
+        -0.1rem 0.05rem 0.5rem #ffdd00, 0.1rem 0.05rem 0.5rem  #ffdd00,
+        0 -0.5rem 1rem#FA275A, 0 0.5rem 2rem #ffe6ff;
+    }
+  }
+  @keyframes fblink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #FA275A,
+        -0.2rem 0.1rem 1rem #ffdd00, 0.2rem 0.1rem 1rem  #ffdd00,
+        0 -0.5rem 1rem #FA275A, 0 0.5rem 2rem #ffe6ff;
+    }
+    28%,
+    33% {
+      color:#ffdd00;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #FA275A;
+      text-shadow: none;
+    }
+  }
+
+
+.sign {
+    letter-spacing: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:900;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #FA275A,
+      -0.2rem 0.1rem 1rem #FA275A, 0.2rem 0.1rem 1rem #FA275A,
+      0 -0.5rem 2rem #FA275A, 0 0.5rem 3rem #FA275A;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #FA275A,
+        -0.2rem 0.1rem 1rem#FA275A, 0.2rem 0.1rem 1rem #FA275A,
+        0 -0.5rem 2rem #FA275A, 0 0.5rem 3rem #FA275A;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #FA275A;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #FA275A;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #FA275A,
+        -0.2rem 0.1rem 1rem #FA275A, 0.2rem 0.1rem 1rem #FA275A,
+        0 -0.5rem 2rem#FA275A, 0 0.5rem 3rem #FA275A;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
